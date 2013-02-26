@@ -30,6 +30,7 @@ var MyLayer = cc.Layer.extend({
     helloLabel:null,
     circle:null,
     sprite:null,
+    size:null,
 
     init:function () {
 
@@ -41,7 +42,7 @@ var MyLayer = cc.Layer.extend({
         // 2. add a menu item with "X" image, which is clicked to quit the program
         //    you may modify it.
         // ask director the window size
-        var size = cc.Director.getInstance().getWinSize();
+        size = cc.Director.getInstance().getWinSize();
 
         // add a "close" icon to exit the progress. it's an autorelease object
         var closeItem = cc.MenuItemImage.create(
@@ -72,14 +73,38 @@ var MyLayer = cc.Layer.extend({
 
         // add "Helloworld" splash screen"
         this.sprite = cc.Sprite.create("res/HelloWorld.png");
-        this.sprite.setAnchorPoint(cc.p(0.5, 0.5));
+
         this.sprite.setPosition(cc.p(size.width / 2, size.height / 2));
 
         lazyLayer.addChild(this.sprite, 0);
 
-        return true;
-    }
+        if( 'keyboard' in sys.capabilities )
+            this.setKeyboardEnabled(true);
 
+        if( 'mouse' in sys.capabilities )
+            this.setMouseEnabled(true);
+
+        if( 'touches' in sys.capabilities )
+            this.setTouchEnabled(true);
+
+        return true;
+    },
+
+    onTouchesMoved:function (touches, event) {
+        this.processEvent( touches[0] );
+    },
+
+    onMouseDragged:function( event ) {
+        this.processEvent( event );
+    },
+
+    processEvent:function( event ) {
+        var delta = event.getDelta();
+        var curPos = this.sprite.getPosition();
+        curPos= cc.pAdd( curPos, delta );
+        curPos = cc.pClamp(curPos, cc.POINT_ZERO, cc.p(size.width, size.height) );
+        this.sprite.setPosition( curPos );
+    }
 });
 
 var MyScene = cc.Scene.extend({
