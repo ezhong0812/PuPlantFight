@@ -32,6 +32,7 @@ var MyLayer = cc.Layer.extend({
     circle:null,
     sprite:null,
     size:null,
+    ws:null,
 
     init:function () {
 
@@ -88,6 +89,21 @@ var MyLayer = cc.Layer.extend({
         if( 'touches' in sys.capabilities )
             this.setTouchEnabled(true);
 
+        var spr = this.sprite;
+        this.ws = WebSocketEngine(
+            function(jobj)
+            {
+                var x = Number(jobj.xx);
+                var y = Number(jobj.yy);
+                spr.setPosition(cc.p(x,y));
+            },
+
+            function(jobj)
+            {
+
+            }
+        );
+
         return true;
     },
 
@@ -105,6 +121,8 @@ var MyLayer = cc.Layer.extend({
         curPos= cc.pAdd( curPos, delta );
         curPos = cc.pClamp(curPos, cc.POINT_ZERO, cc.p(size.width, size.height) );
         this.sprite.setPosition( curPos );
+
+        this.ws.publish("TS", curPos.x.toString(), curPos.y.toString());
     }
 });
 

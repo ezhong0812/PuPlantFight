@@ -40,8 +40,8 @@
             connection.send(JSON.stringify({
                 type: 'publish',
                 destination: destination,
-                x: x,
-                y: y
+                xx: x,
+                yy: y
             }));
         };
 
