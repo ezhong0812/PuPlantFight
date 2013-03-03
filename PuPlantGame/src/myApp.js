@@ -74,7 +74,7 @@ var MyLayer = cc.Layer.extend({
         this.addChild(lazyLayer);
 
         // add "Helloworld" splash screen"
-        this.sprite = cc.Sprite.create("res/HelloWorld.png");
+        this.sprite = cc.Sprite.create("res/CloseNormal.png");
 
         this.sprite.setPosition(cc.p(size.width / 2, size.height / 2));
 
