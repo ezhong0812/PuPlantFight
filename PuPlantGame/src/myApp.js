@@ -80,6 +80,7 @@ var MyLayer = cc.Layer.extend({
 
         lazyLayer.addChild(this.sprite, 0);
 
+
         if( 'keyboard' in sys.capabilities )
             this.setKeyboardEnabled(true);
 
