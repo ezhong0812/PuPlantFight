@@ -37,7 +37,7 @@
         engineDir:'../cocos2d/',
         //SingleEngineFile:'',
         appFiles:[
-            'src/mainMenu.js',
+            'src/TSMainMenu.js',
             'src/WebSocketEngine.js',
             'src/resource.js',
             'src/myApp.js'//add your own files in order here
