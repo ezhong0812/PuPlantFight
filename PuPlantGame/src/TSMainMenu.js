@@ -4,7 +4,7 @@ var TSMainMenu = cc.Layer.extend({
     init:function() {
         var bRet = false;
         if (this._super()) {
-            var winSize = cc.Director.getInstance().getWinSize();
+            winSize = cc.Director.getInstance().getWinSize();
             var sp = cc.Sprite.create(s_loading);
             sp.setAnchorPoint(cc.p(0,0));
             this.addChild(sp, 0, 1);
@@ -46,9 +46,14 @@ var TSMainMenu = cc.Layer.extend({
 
     onNewGame:function (pSender) {
         console.log("onNewGame Clicked!");
+
     },
     onSettings:function (pSender) {
         console.log("onSettings Clicked!");
+
+        var scene = cc.Scene.create();
+        scene.addChild(TSSettingsLayer.create());
+        cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1.2, scene));
     },
     onAbout:function (pSender) {
         console.log("onAbout Clicked!");
