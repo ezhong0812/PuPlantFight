@@ -37,6 +37,8 @@
         engineDir:'../cocos2d/',
         //SingleEngineFile:'',
         appFiles:[
+            'src/TSAboutLayer.js',
+            'src/TSGameLayer.js',
             'src/TSSettingLayer.js',
             'src/TSMainMenu.js',
             'src/WebSocketEngine.js',

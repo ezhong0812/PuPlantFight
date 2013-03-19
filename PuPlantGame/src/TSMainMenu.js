@@ -47,6 +47,9 @@ var TSMainMenu = cc.Layer.extend({
     onNewGame:function (pSender) {
         console.log("onNewGame Clicked!");
 
+        var scene = cc.Scene.create();
+        scene.addChild(TSGameLayer.create());
+        cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1.2, scene));
     },
     onSettings:function (pSender) {
         console.log("onSettings Clicked!");
@@ -57,6 +60,10 @@ var TSMainMenu = cc.Layer.extend({
     },
     onAbout:function (pSender) {
         console.log("onAbout Clicked!");
+
+        var scene = cc.Scene.create();
+        scene.addChild(TSAboutLayer.create());
+        cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1.2, scene));
     },
     update:function () {
 
