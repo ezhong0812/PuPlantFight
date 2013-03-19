@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27580a34-59fa-4670-8fb4-569d4074267c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="27580a34-59fa-4670-8fb4-569d4074267c" name="Default" comment="修改HTML页面.支持触摸操作">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/Enemy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/arial-14.GlyphProject" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/arial-14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/b01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/bg01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/Music/bgMusic.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/bullet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/Music/buttonEffet.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/cocos2d-html5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/explode1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/explode2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/explode3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/Music/explodeEffect.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/explosion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/Music/fireEffect.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/flare.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/gameOver.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/hit.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/loading.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/Music/mainMainMusic.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/menuTitle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/ship01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/Music/shipDestroyEffect.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/Enemy.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/arial-14.fnt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/bullet.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/explosion.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/res/level01.tmx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PuPlantGame/src/mainMenu.js" />
+      <change type="DELETED" beforePath="E:\GitHubProject\PuPlantFight\.idea\workspace.xml" afterPath="" />
     </list>
     <ignored path="PuPlantFight.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658068875" ignored="false" />
+    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658801796" ignored="false" />
+    <file path="/mainMenu.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658666140" ignored="false" />
+    <file path="E:/WebProject/Cocos/samples/games/MoonWarriors/src/SysMenu.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658261875" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +79,7 @@
       <file leaf-file-name="WebSocketEngine.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0">
+            <state line="73" column="37" selection-start="2258" selection-end="2258" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,7 +106,7 @@
       <file leaf-file-name="myApp.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/src/myApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="63" selection-start="3689" selection-end="3689" vertical-scroll-proportion="0.0">
+            <state line="118" column="45" selection-start="4003" selection-end="4003" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,10 +121,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="44" selection-start="2464" selection-end="2464" vertical-scroll-proportion="1.2316514">
+            <state line="53" column="60" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainMenu.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PuPlantGame/src/mainMenu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="12" selection-start="185" selection-end="185" vertical-scroll-proportion="0.43348625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CCCommon.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cocos2d/platform/CCCommon.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="3" selection-start="2094" selection-end="2094" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CCConfig.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cocos2d/platform/CCConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="284" column="3" selection-start="10041" selection-end="10041" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,6 +181,7 @@
         <option value="$PROJECT_DIR$/PuPlantGame/cocos2d.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/myApp.js" />
+        <option value="$PROJECT_DIR$/PuPlantGame/src/mainMenu.js" />
       </list>
     </option>
   </component>
@@ -239,6 +300,14 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.Index.html">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
@@ -314,7 +383,11 @@
       <created>1363658071828</created>
       <updated>1363658071828</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修改HTML页面.支持触摸操作">
+      <created>1363658081515</created>
+      <updated>1363658081515</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -436,21 +509,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/res/HelloWorld.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/res/HelloWorld.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/res/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -500,20 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/myApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="63" selection-start="3689" selection-end="3689" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/cocos2d.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="60" selection-start="2631" selection-end="2631" vertical-scroll-proportion="0.0">
@@ -523,7 +567,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="44" selection-start="2464" selection-end="2464" vertical-scroll-proportion="1.2316514">
+        <state line="53" column="60" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="37" selection-start="2258" selection-end="2258" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/myApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="45" selection-start="4003" selection-end="4003" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cocos2d/platform/CCConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="284" column="3" selection-start="10041" selection-end="10041" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cocos2d/platform/CCCommon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="3" selection-start="2094" selection-end="2094" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/mainMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="185" selection-end="185" vertical-scroll-proportion="0.43348625">
           <folding />
         </state>
       </provider>
