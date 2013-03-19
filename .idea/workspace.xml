@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27580a34-59fa-4670-8fb4-569d4074267c" name="Default" comment="修改HTML页面.支持触摸操作">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="27580a34-59fa-4670-8fb4-569d4074267c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PuPlantFight.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658024359" ignored="false" />
+    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658057468" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,7 +306,11 @@
       <created>1363658046359</created>
       <updated>1363658046359</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改HTML页面.支持触摸操作">
+      <created>1363658058953</created>
+      <updated>1363658058953</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
