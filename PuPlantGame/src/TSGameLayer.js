@@ -1,4 +1,8 @@
 var TSGameLayer = cc.Layer.extend({
+
+    ws : null, //WebSocket引擎
+    sprite: null,
+
     init:function () {
         var bRet = false;
         if (this._super()) {
@@ -20,19 +24,58 @@ var TSGameLayer = cc.Layer.extend({
             cp_back.y -= 50.0;
             back.setPosition(cp_back);
 
+            // add "Helloworld" splash screen"
+            this.sprite = cc.Sprite.create("res/CloseNormal.png");
+            this.sprite.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
+            this.addChild(this.sprite, 0);
+
+            if( 'keyboard' in sys.capabilities )
+                this.setKeyboardEnabled(true);
+
+            if( 'mouse' in sys.capabilities )
+                this.setMouseEnabled(true);
+
+            if( 'touches' in sys.capabilities )
+                this.setTouchEnabled(true);
+
+            var spr = this.sprite;
+            this.ws = WebSocketEngine (
+                function(jobj) {
+                    var x = Number(jobj.xx);
+                    var y = Number(jobj.yy);
+                    spr.setPosition(cc.p(x,y));
+                },
+                function(jobj) {
+
+                }
+            );
             bRet = true;
         }
-
         return bRet;
     },
+
     onBackCallback:function (pSender) {
         var scene = cc.Scene.create();
         scene.addChild(TSMainMenu.create());
         cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1.2, scene));
     },
-    onSoundControl:function(){
+
+    onTouchesMoved:function (touches, event) {
+        this.processEvent( touches[0] );
     },
-    onModeControl:function(){
+
+    onMouseDragged:function( event ) {
+        this.processEvent( event );
+    },
+
+    processEvent:function( event ) {
+        var delta = event.getDelta();
+        var curPos = this.sprite.getPosition();
+        curPos= cc.pAdd( curPos, delta );
+        curPos = cc.pClamp(curPos, cc.POINT_ZERO, cc.p(winSize.width, winSize.height) );
+        this.sprite.setPosition( curPos );
+
+        this.ws.publish("TS", curPos.x.toString(), curPos.y.toString());
     }
 });
 
