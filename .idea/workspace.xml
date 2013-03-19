@@ -6,7 +6,7 @@
     </list>
     <ignored path="PuPlantFight.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658057468" ignored="false" />
+    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658068875" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +310,11 @@
       <created>1363658058953</created>
       <updated>1363658058953</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改HTML页面.支持触摸操作">
+      <created>1363658071828</created>
+      <updated>1363658071828</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
