@@ -13,6 +13,7 @@ var TSMainMenu = cc.Layer.extend({
             logo.setAnchorPoint(cc.p(0,0));
             logo.setPosition(cc.p(0,250));
             this.addChild(logo, 10, 1);
+
             var newGameNormal = cc.Sprite.create(s_menu, cc.rect(0, 0, 126, 33));
             var newGameSelected = cc.Sprite.create(s_menu, cc.rect(0, 33, 126, 33));
             var newGameDisabled = cc.Sprite.create(s_menu, cc.rect(0, 33 * 2, 126, 33));
