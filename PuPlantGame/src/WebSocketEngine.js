@@ -1,6 +1,4 @@
-
-(function ()
-{
+(function (){
     // connect to the Json Messaging server and return an 'connection' object
     function connect(host, port, messageListener, errorListener) {
         window.WebSocket = window.WebSocket || window.MozWebSocket;

@@ -37,7 +37,7 @@ var TSAboutLayer = cc.Layer.extend({
 });
 
 TSAboutLayer.create = function () {
-    var sg = new TSGameLayer();
+    var sg = new TSAboutLayer();
     if (sg && sg.init()) {
         return sg;
     }
