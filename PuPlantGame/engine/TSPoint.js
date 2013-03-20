@@ -1,6 +1,6 @@
 TSPoint = function (x, y) {
-    this.m_x = x;
-    this.m_y = y;
+    this.m_x = parseInt(x);
+    this.m_y = parseInt(y);
     this.add = function(p) {
         this.m_x += p.m_x;
         this.m_y += p.m_y;
@@ -14,8 +14,8 @@ TSPoint = function (x, y) {
         this.m_y = p.m_y;
     };
     this.set = function(x,y) {
-        this.m_x = x;
-        this.m_y = y;
+        this.m_x = parseInt(x);
+        this.m_y = parseInt(y);
     }
     this.get = function() {
         var newobj = new TSPoint(this.m_x, this.m_y);

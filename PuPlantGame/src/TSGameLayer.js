@@ -77,21 +77,18 @@ var TSGameLayer = cc.Layer.extend({
             var bg = cc.Sprite.create(s_board_test);
             bg.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
             bg.setScale(0.5);
-            this.addChild(bg, 0, 1001)
+            this.addChild(bg, 0, 1001);
 
             var pR = bg.getTextureRect();
-            this.m_pOO = cc.p(winSize.width/2 - pR.size.width/2, winSize.height/2 - pR.size.height/2);
+            this.m_pOO = new TSPoint(winSize.width/2 - pR.size.width/4, winSize.height/2 - pR.size.height/4);
 
             for (var i = 0; i < 9; i++) {
                 for (var j = 0; j < 9; j++) {
-                    this.m_pMeshPos[i][j] = cc.p(this.m_pOO.x + i * 33 + 32/2, this.m_pOO.y + j * 33 + 32/2);
+                    this.m_pMeshPos[i][j] = cc.p(this.m_pOO.m_x + i * 33 + 32/2, this.m_pOO.m_y + j * 33 + 32/2);
                 }
             }
 
-
-
             ///Sys
-
             cc.MenuItemFont.setFontName("Arial");
             cc.MenuItemFont.setFontSize(26);
             var label = cc.LabelTTF.create("MainMenu", "Arial", 20);
@@ -148,17 +145,88 @@ var TSGameLayer = cc.Layer.extend({
     },
 
     onMouseDragged:function( event ) {
+        //this.processEvent( event );
+    },
+
+    onMouseDown:function( event ) {
         this.processEvent( event );
     },
 
-    processEvent:function( event ) {
-        var delta = event.getDelta();
-        var curPos = this.sprite.getPosition();
-        curPos= cc.pAdd( curPos, delta );
-        curPos = cc.pClamp(curPos, cc.POINT_ZERO, cc.p(winSize.width, winSize.height) );
-        this.sprite.setPosition( curPos );
+    GetMeshSprite: function(pos) {
+        for (var i = 0; i < this.m_SpiritPool.length; i++) {
+            var spr = this.m_SpiritPool[i];
+            if (spr.pos.m_x == pos.m_x && spr.pos.m_y == pos.m_y) {
+                return spr;
+            }
+        }
+        return null;
+    },
 
-        this.ws.publish("TS", curPos.x.toString(), curPos.y.toString());
+    processEvent:function( event ) {
+        var touchLocation = event.getLocation();
+        var pGY = new TSPoint(touchLocation.x - this.m_pOO.m_x, touchLocation.y - this.m_pOO.m_y);
+
+        var xy = new TSPoint(pGY.m_x / 33, pGY.m_y / 33);
+        if (xy.m_x > 8 || xy.m_y > 8) {
+            return false;
+        }
+
+        console.log("我被点中了! x = " + xy.m_x + " y = " + xy.m_y);
+
+        if (this.m_iStat == 0) {
+            this.m_Choose = this.GetMeshSprite(xy);
+            if (this.m_Choose != null) {
+                this.m_iStat = 1;
+            }
+        }
+        else if(this.m_iStat == 1)
+        {
+            this.m_pPath = [];
+            this.m_iIndexPath = 0;
+
+            //new to find for best path
+            var pO = new TSPoint(this.m_Choose.pos.m_x, this.m_Choose.pos.m_y);
+            var pT = xy;
+
+            this.m_Star.Init(pO, pT, this.m_Map);
+            this.m_Star.run();
+
+            var tsNode = this.m_Star.getResult();
+            if (tsNode.pPos.m_x != pT.m_x || tsNode.pPos.m_y != pT.m_y) {
+                //printf("错误的寻路!");
+                this.m_iStat = 0;
+                this.m_Choose = null;
+                return false;
+            }
+
+            var pR = [];
+            while (tsNode.pFather != null)
+            {
+//            CCSprite* pT = CCSprite::create("chess2.png");
+//            CCPoint pP = m_pMeshPos[TSNode->pPos.m_x][TSNode->pPos.m_y];
+//            pT->setPosition(pP);
+//            //pT->setScale(2);
+//            this->addChild(pT, 2, 1);
+//            m_pPathSpriteList.push_back(pT);
+
+                pR.push(tsNode.pPos);
+
+                tsNode = tsNode.pFather;
+            }
+
+
+            for (var i = 0; i < pR.length; i++) {
+                this.m_pPath.push(pR[i]);
+            }
+
+            this.m_iStat = 2;
+            this.m_Map.m_map[this.m_Choose.pos.m_x * this.m_Map.m_width + this.m_Choose.pos.m_y] = 0;
+            this.m_MapSpr[this.m_Choose.pos.m_x][this.m_Choose.pos.m_y] = null;
+        }
+
+        return true;
+
+//        this.ws.publish("TS", curPos.x.toString(), curPos.y.toString());
     }
 });
 
