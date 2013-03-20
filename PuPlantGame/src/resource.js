@@ -25,6 +25,7 @@ var s_hit = dirImg + "hit.jpg";
 var s_arial14 = dirImg + "arial-14.png";
 var s_arial14_fnt = dirImg + "arial-14.fnt";
 var s_board_test = dirImg + "board_test.png";
+var s_background = dirImg + "background.png";
 var s_chess0 = dirImg + "chess0.png";
 var s_chess1 = dirImg + "chess1.png";
 var s_chess2 = dirImg + "chess2.png";
@@ -78,6 +79,7 @@ var g_ressources = [
     {src:s_hit},
     {src:s_arial14},
     {src:s_board_test},
+    {src:s_background},
     {src:s_chess0},
     {src:s_chess1},
     {src:s_chess2},

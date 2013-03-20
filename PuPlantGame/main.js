@@ -47,6 +47,8 @@ var cocos2dApp = cc.Application.extend({
         // set FPS. the default value is 1.0/60 if you don't call this
         director.setAnimationInterval(1.0 / this.config['frameRate']);
 
+        winSize = cc.Director.getInstance().getWinSize();
+
         //load resources
         cc.Loader.preload(g_ressources, function () {
             cc.Director.getInstance().replaceScene(new this.startScene());
@@ -55,4 +57,4 @@ var cocos2dApp = cc.Application.extend({
         return true;
     }
 });
-var myApp = new cocos2dApp(TSMainMenu.scene);
+var myApp = new cocos2dApp(TSGameLayer.scene);
