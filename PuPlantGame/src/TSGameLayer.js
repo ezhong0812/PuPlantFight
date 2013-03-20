@@ -25,7 +25,7 @@ var TSGameLayer = cc.Layer.extend({
             back.setPosition(cp_back);
 
             // add "Helloworld" splash screen"
-            this.sprite = cc.Sprite.create("res/CloseNormal.png");
+            this.sprite = cc.Sprite.create(s_chess0);
             this.sprite.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
             this.addChild(this.sprite, 0);
 
