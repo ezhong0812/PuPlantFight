@@ -179,8 +179,8 @@ var TSGameLayer = cc.Layer.extend({
                 this.m_iStat = 1;
             }
         }
-        else if(this.m_iStat == 1)
-        {
+        
+        else if(this.m_iStat == 1) {
             this.m_pPath = [];
             this.m_iIndexPath = 0;
 
@@ -200,20 +200,10 @@ var TSGameLayer = cc.Layer.extend({
             }
 
             var pR = [];
-            while (tsNode.pFather != null)
-            {
-//            CCSprite* pT = CCSprite::create("chess2.png");
-//            CCPoint pP = m_pMeshPos[TSNode->pPos.m_x][TSNode->pPos.m_y];
-//            pT->setPosition(pP);
-//            //pT->setScale(2);
-//            this->addChild(pT, 2, 1);
-//            m_pPathSpriteList.push_back(pT);
-
+            while (tsNode.pFather != null) {
                 pR.push(tsNode.pPos);
-
                 tsNode = tsNode.pFather;
             }
-
 
             for (var i = 0; i < pR.length; i++) {
                 this.m_pPath.push(pR[i]);

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="27580a34-59fa-4670-8fb4-569d4074267c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js" afterPath="$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/engine/TSPoint.js" afterPath="$PROJECT_DIR$/PuPlantGame/engine/TSPoint.js" />
     </list>
     <ignored path="PuPlantFight.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,7 +85,7 @@
       <file leaf-file-name="TSGameLayer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="13" selection-start="2420" selection-end="2420" vertical-scroll-proportion="-2.3353941">
+            <state line="181" column="8" selection-start="5234" selection-end="5234" vertical-scroll-proportion="-0.79134464">
               <folding />
             </state>
           </provider>
@@ -544,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="13" selection-start="2420" selection-end="2420" vertical-scroll-proportion="-2.3353941">
+        <state line="181" column="8" selection-start="5234" selection-end="5234" vertical-scroll-proportion="-0.79134464">
           <folding />
         </state>
       </provider>
