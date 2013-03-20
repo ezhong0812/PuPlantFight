@@ -35,8 +35,13 @@
         frameRate:60,
         tag:'gameCanvas', //the dom element to run cocos2d on
         engineDir:'../cocos2d/',
+
         //SingleEngineFile:'',
         appFiles:[
+            //Engine
+            'engine/TSAStar.js',
+            'engine/TSFileLoader.js',
+            //Game
             'src/TSAboutLayer.js',
             'src/TSGameLayer.js',
             'src/TSSettingLayer.js',

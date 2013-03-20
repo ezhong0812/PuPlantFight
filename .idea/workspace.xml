@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27580a34-59fa-4670-8fb4-569d4074267c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/cocos2d.js" afterPath="$PROJECT_DIR$/PuPlantGame/cocos2d.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/src/resource.js" afterPath="$PROJECT_DIR$/PuPlantGame/src/resource.js" />
     </list>
     <ignored path="PuPlantFight.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,6 +14,8 @@
     <file path="/TSSettingLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363662426906" ignored="false" />
     <file path="/TSGameLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363666401859" ignored="false" />
     <file path="/TSAboutLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363663681328" ignored="false" />
+    <file path="/cocos2d.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363782429469" ignored="false" />
+    <file path="/resource.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363783059831" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,73 +52,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WebSocketEngine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TSAboutLayer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSAboutLayer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="32" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TSGameLayer.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="31" selection-start="569" selection-end="569" vertical-scroll-proportion="0.029275808">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PuPlantGame/src/resource.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="21" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCNode.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cocos2d/base_nodes/CCNode.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1533" column="4" selection-start="47716" selection-end="47716" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCMenu.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cocos2d/menu_nodes/CCMenu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="245" column="20" selection-start="7429" selection-end="7429" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cocos2d.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/cocos2d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="30" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.0">
+            <state line="38" column="30" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PuPlantGame/main.js">
+      <file leaf-file-name="resource.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PuPlantGame/src/resource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.0">
+            <state line="86" column="19" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.7766423">
               <folding />
             </state>
           </provider>
@@ -145,11 +94,12 @@
         <option value="$PROJECT_DIR$/PuPlantGame/src/myApp.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/mainMenu.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/TSSettingLayer.js" />
-        <option value="$PROJECT_DIR$/PuPlantGame/cocos2d.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/TSMainMenu.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/TSAboutLayer.js" />
+        <option value="$PROJECT_DIR$/PuPlantGame/cocos2d.js" />
+        <option value="$PROJECT_DIR$/PuPlantGame/src/resource.js" />
       </list>
     </option>
   </component>
@@ -479,35 +429,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.0">
+        <state line="48" column="0" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.54761904">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/base_nodes/CCNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1533" column="4" selection-start="47716" selection-end="47716" vertical-scroll-proportion="0.0">
+        <state line="1533" column="4" selection-start="47716" selection-end="47716" vertical-scroll-proportion="0.02827381">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/menu_nodes/CCMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="20" selection-start="7429" selection-end="7429" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="21" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/cocos2d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="30" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.0">
+        <state line="245" column="20" selection-start="7429" selection-end="7429" vertical-scroll-proportion="0.02827381">
           <folding />
         </state>
       </provider>
@@ -528,7 +464,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="569" selection-end="569" vertical-scroll-proportion="0.029275808">
+        <state line="21" column="0" selection-start="690" selection-end="690" vertical-scroll-proportion="-0.3392857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PuPlantGame/cocos2d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="30" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="19" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.7766423">
           <folding />
         </state>
       </provider>

@@ -24,6 +24,15 @@ var s_explode3 = dirImg + "explode3.jpg";
 var s_hit = dirImg + "hit.jpg";
 var s_arial14 = dirImg + "arial-14.png";
 var s_arial14_fnt = dirImg + "arial-14.fnt";
+var s_board_test = dirImg + "board_test.png";
+var s_chess0 = dirImg + "chess0.png";
+var s_chess1 = dirImg + "chess1.png";
+var s_chess2 = dirImg + "chess2.png";
+var s_chess3 = dirImg + "chess3.png";
+var s_chess4 = dirImg + "chess4.png";
+var s_chess5 = dirImg + "chess5.png";
+var s_chess6 = dirImg + "chess6.png";
+
 
 //music
 var s_bgMusic = dirMusic + "bgMusic.mp3";
@@ -49,6 +58,7 @@ var g_ressources = [
     {src:s_HelloWorld},
     {src:s_CloseNormal},
     {src:s_CloseSelected},
+
     //image
     {src:s_bg01},
     {src:s_loading},
@@ -67,6 +77,14 @@ var g_ressources = [
     {src:s_explode3},
     {src:s_hit},
     {src:s_arial14},
+    {src:s_board_test},
+    {src:s_chess0},
+    {src:s_chess1},
+    {src:s_chess2},
+    {src:s_chess3},
+    {src:s_chess4},
+    {src:s_chess5},
+    {src:s_chess6},
 
     //tmx
     {src:s_level01},
