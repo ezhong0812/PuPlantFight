@@ -41,7 +41,7 @@
             //Engine
             'engine/TSAStar.js',
             'engine/TSPoint.js',
-            //'engine/TSFileLoader.js',
+
             //Game
             'src/TSAboutLayer.js',
             'src/TSGameLayer.js',
