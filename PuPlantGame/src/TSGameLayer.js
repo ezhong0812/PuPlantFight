@@ -164,9 +164,7 @@ var TSGameLayer = cc.Layer.extend({
             if (this.m_Choose != null) {
                 this.m_iStat = 1;
             }
-        }
-        
-        else if(this.m_iStat == 1) {
+        }else if(this.m_iStat == 1) {
             this.m_pPath = [];
             this.m_iIndexPath = 0;
 
@@ -187,7 +185,7 @@ var TSGameLayer = cc.Layer.extend({
 
             var pR = [];
             while (tsNode.pFather != null) {
-                pR.push(tsNode.pPos);
+                pR.unshift(tsNode.pPos);
                 tsNode = tsNode.pFather;
             }
 
@@ -434,23 +432,27 @@ var TSGameLayer = cc.Layer.extend({
             pRList = pRList.concat(pXXList);
         }
 
-
         for (var i = 0; i < pRList.length; i++) {
             var spr = pRList[i];
 
             this.m_Map.m_map[spr.pos.m_x * this.m_Map.m_width + spr.pos.m_y] = 0;
-            this.m_MapSpr[spr.pos.m_x][spr.pos.m_y] = 0;
+            this.m_MapSpr[spr.pos.m_x][spr.pos.m_y] = null;
 
             this.removeChild(spr, true);
 
-            this.m_SpiritPool.splice(i,1);
+            for (var j = 0 ; j < this.m_SpiritPool.length ; j++) {
+                if (spr.pos.equal(this.m_SpiritPool[j].pos)) {
+                    this.m_SpiritPool.splice(j,1);
+                    break;
+                }
+            }
         }
 
         if (pRList.length > 0) {
             var spr = pChoose;
 
             this.m_Map.m_map[spr.pos.m_x * this.m_Map.m_width + spr.pos.m_y] = 0;
-            this.m_MapSpr[spr.pos.m_x][spr.pos.m_y] = 0;
+            this.m_MapSpr[spr.pos.m_x][spr.pos.m_y] = null;
             this.removeChild(spr, true);
 
             for (var i = 0 ; i < this.m_SpiritPool.length ; i++) {
@@ -495,14 +497,16 @@ var TSGameLayer = cc.Layer.extend({
                 }
 
                 if (this.m_SpiritPool.length >= 81) {
-                    this.m_Map.m_map = [];
-                    this.m_MapSpr = [];
-
+                    for (var i = 0; i < 81; i++) {
+                        this.m_Map.m_map[i] = 0;
+                    }
+                    this.m_MapSpr = [[null],[null],[null],[null],[null],[null],[null],[null],[null]];
                     for (var i = 0; i < this.m_SpiritPool.length; i++) {
                         this.removeChild(this.m_SpiritPool[i], true);
                     }
                     this.m_SpiritPool = [];
                     this.m_Choose = null;
+                    this.m_iStat = 0;
 
                     this.random3Ball();
                 }
@@ -536,7 +540,7 @@ var TSGameLayer = cc.Layer.extend({
         var pT = this.m_Choose.getPosition();
         var pMove = pT;
 
-        if (Math.abs(pEnd.x - pT.x) < 8 && Math.abs(pEnd.y - pT.y) < 8 ) {
+        if (Math.abs(pEnd.x - pT.x) < 16 && Math.abs(pEnd.y - pT.y) < 16 ) {
             this.m_iIndexPath ++;
             this.m_Choose.pos = pPos;
             pMove = pEnd;

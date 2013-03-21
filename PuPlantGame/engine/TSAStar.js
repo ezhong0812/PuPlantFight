@@ -112,6 +112,7 @@ TSAStar = function() {
 
     this.run = function() {
         var node = new TSNode(this.pStart, this.pStart, this.pEnd, null);
+
         while (true){
             if (this.pCurrentPos.equal(this.pEnd)) {
                 break;
@@ -127,7 +128,7 @@ TSAStar = function() {
 
             this.closeList.push(node);
             this.pMap.m_mapclose[node.pPos.m_x * this.pMap.m_width + node.pPos.m_y] = 1;
-            for (var i = 0 ; i < 8 ; i++){
+            for (var i = 0 ; i < 4 ; i++){
                 var _Pos = new TSPoint(this.pCurrentPos.m_x + TSDirection[i][0], this.pCurrentPos.m_y + TSDirection[i][1]);
                 if (_Pos.m_x >= 0 && _Pos.m_x < this.pMap.m_height &&
                     _Pos.m_y >= 0 && _Pos.m_y < this.pMap.m_width){
@@ -158,9 +159,19 @@ TSAStar = function() {
         this.pCurrentPos = start;
         this.pEnd = end;
         this.pMap = map;
+
+        this.openList = [];
+        this.closeList = [];
+
+        for(var i = 0 ; i < this.pMap.m_width*this.pMap.m_height ; i++) {
+            this.pMap.m_mapclose[i] = 0;
+        }
     }
 
     this.getResult = function(){
+        if( this.closeList.length <= 0 ){
+            return null;
+        }
         return this.closeList[this.closeList.length-1];
     }
 

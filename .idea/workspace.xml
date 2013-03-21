@@ -4,29 +4,30 @@
     <list default="true" id="27580a34-59fa-4670-8fb4-569d4074267c" name="Default" comment="">
       <change type="DELETED" beforePath="E:\GitHubProject\PuPlantFight\未命名文件夹\boardtest.png" afterPath="" />
       <change type="DELETED" beforePath="E:\GitHubProject\PuPlantFight\未命名文件夹\xx.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/engine/TSAStar.js" afterPath="$PROJECT_DIR$/PuPlantGame/engine/TSAStar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js" afterPath="$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/src/TSMainMenu.js" afterPath="$PROJECT_DIR$/PuPlantGame/src/TSMainMenu.js" />
     </list>
     <ignored path="PuPlantFight.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363838217046" ignored="false" />
+    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363838593703" ignored="false" />
     <file path="/mainMenu.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658666140" ignored="false" />
     <file path="E:/WebProject/Cocos/samples/games/MoonWarriors/src/SysMenu.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658261875" ignored="false" />
     <file path="/TSMainMenu.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363663751640" ignored="false" />
     <file path="/TSSettingLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363662426906" ignored="false" />
-    <file path="/TSGameLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363838318265" ignored="false" />
+    <file path="/TSGameLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363844472203" ignored="false" />
     <file path="/TSAboutLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363663681328" ignored="false" />
     <file path="/cocos2d.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363782429469" ignored="false" />
     <file path="/resource.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363786366278" ignored="false" />
     <file path="/main.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363786791449" ignored="false" />
     <file path="/TSSprite.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363831631640" ignored="false" />
     <file path="/TSPoint.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363792188619" ignored="false" />
-    <file path="/fragment.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363833520796" ignored="false" />
+    <file path="/fragment.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363844650500" ignored="false" />
     <file path="$PROJECT_DIR$/../TSCocos2DX/TSCocos2DX/TSLayer.cpp" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363830470875" ignored="false" />
-    <file path="$PROJECT_DIR$/../TSCocos2DX/TSCocos2DX/NEAStar.h" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363830470875" ignored="false" />
+    <file path="$PROJECT_DIR$/../TSCocos2DX/TSCocos2DX/NEAStar.h" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363841207296" ignored="false" />
     <file path="$PROJECT_DIR$/../TSCocos2DX/TSCocos2DX/TSPoint.h" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363830470875" ignored="false" />
     <file path="$PROJECT_DIR$/../TSCocos2DX/TSCocos2DX/TSLayer.h" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363830470875" ignored="false" />
-    <file path="/TSAStar.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363832388578" ignored="false" />
+    <file path="/TSAStar.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363843651812" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,16 @@
       <file leaf-file-name="TSMainMenu.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSMainMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="38" selection-start="239" selection-end="287" vertical-scroll-proportion="0.0">
+            <state line="26" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketEngine.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,8 +103,10 @@
       <file leaf-file-name="TSGameLayer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="33" selection-start="4768" selection-end="4768" vertical-scroll-proportion="0.3535503">
-              <folding />
+            <state line="513" column="0" selection-start="13780" selection-end="13780" vertical-scroll-proportion="0.6394558">
+              <folding>
+                <element signature="e#6028#12364#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +114,16 @@
       <file leaf-file-name="TSAStar.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/engine/TSAStar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="5" selection-start="5550" selection-end="5550" vertical-scroll-proportion="0.0">
+            <state line="172" column="0" selection-start="8663" selection-end="8663" vertical-scroll-proportion="-5.68">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EcmaScript5.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="7" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,15 +151,6 @@
         <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSSprite.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="9" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PuPlantGame/src/resource.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="2641" selection-end="2641" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,11 +184,11 @@
         <option value="$PROJECT_DIR$/PuPlantGame/src/TSAboutLayer.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/engine/TSFileLoader.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/resource.js" />
-        <option value="$PROJECT_DIR$/PuPlantGame/src/TSMainMenu.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/main.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/cocos2d.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/engine/TSPoint.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/TSSprite.js" />
+        <option value="$PROJECT_DIR$/PuPlantGame/src/TSMainMenu.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/engine/TSAStar.js" />
         <option value="$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js" />
       </list>
@@ -218,7 +230,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -229,7 +241,61 @@
       <autoscrollFromSource ProjectPane="true" />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantFight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantFight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantFight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantFight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantFight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantFight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantFight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PuPlantGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -371,10 +437,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35945272" sideWeight="0.49968293" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920736" sideWeight="0.61210454" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920736" sideWeight="0.6786207" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.19513991" sideWeight="0.96829593" order="2" side_tool="true" content_ui="combo" x="1169" y="49" width="265" height="757" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38789546" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22320862" sideWeight="0.6110345" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3213793" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22320862" sideWeight="0.6786207" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21931034" sideWeight="0.49587825" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827586" sideWeight="0.49968293" order="7" side_tool="false" content_ui="tabs" />
@@ -450,21 +516,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint type="javascript-exception">
           <properties />
           <option name="timeStamp" value="1" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="416" />
+      <option name="time" value="431" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/ChatClient.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="592" selection-end="3908" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/platform/CCConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="286" column="47" selection-start="10086" selection-end="10086" vertical-scroll-proportion="0.0" />
@@ -477,17 +541,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/base_nodes/CCNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1533" column="4" selection-start="47716" selection-end="47716" vertical-scroll-proportion="0.02827381" />
+        <state line="1533" column="4" selection-start="47716" selection-end="47716" vertical-scroll-proportion="0.02827381">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/menu_nodes/CCMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="245" column="20" selection-start="7429" selection-end="7429" vertical-scroll-proportion="0.02827381" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSAboutLayer.js">
@@ -532,16 +593,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/engine/TSAStar.js">
+    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/WebSocketEngine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="5" selection-start="5550" selection-end="5550" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSMainMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="239" selection-end="287" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -553,10 +607,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSMainMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PuPlantGame/engine/TSAStar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="0" selection-start="8663" selection-end="8663" vertical-scroll-proportion="-5.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="33" selection-start="4768" selection-end="4768" vertical-scroll-proportion="0.3535503">
-          <folding />
+        <state line="513" column="0" selection-start="13780" selection-end="13780" vertical-scroll-proportion="0.6394558">
+          <folding>
+            <element signature="e#6028#12364#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
