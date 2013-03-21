@@ -1,7 +1,7 @@
 
 var TSSprite = cc.Sprite.extend({
     pos:new TSPoint(0,0),
-    color:0,
+    iColor:0,
 
     CreateSprite: function(pos, color) {
 
@@ -11,7 +11,7 @@ var TSSprite = cc.Sprite.extend({
         var sprite = new TSSprite();
 
         sprite.pos = pos;
-        sprite.color = color;
+        sprite.iColor = color;
 
         if (argnum === 0) {
             if (sprite.init())

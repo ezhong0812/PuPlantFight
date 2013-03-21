@@ -52,7 +52,7 @@ var TSGameLayer = cc.Layer.extend({
 
         this.m_SpiritPool.push(spr);
 
-        //removeBall(spr);
+        this.removeBall(spr);
 
         return true;
     },
@@ -217,6 +217,266 @@ var TSGameLayer = cc.Layer.extend({
         return true;
 
 //        this.ws.publish("TS", curPos.x.toString(), curPos.y.toString());
+    },
+
+    removeBall:function(pChoose) {
+        if (pChoose == null) {
+            return false;
+        }
+        var pO = pChoose.pos.get();
+        var pRList = [];
+
+        var pUDList = [];
+        var count = 0;
+        var index = 0;
+        //up down
+        for (; ; index++) {
+            pO.m_y--;
+            if (pO.m_y < 0) {
+                break;
+            }
+
+            var spr = this.m_MapSpr[pO.m_x][pO.m_y];
+            if (spr != null) {
+                if (spr.iColor == pChoose.iColor) {
+                    count ++;
+                    pUDList.push(spr);
+                }
+                else{
+                    break;
+                }
+            }
+            else{
+                break;
+            }
+        }
+
+        pO = pChoose.pos;
+        index = 0;
+        //up down
+        for (; ; index++) {
+            pO.m_y++;
+            if (pO.m_y > 8) {
+                break;
+            }
+
+            var spr = this.m_MapSpr[pO.m_x][pO.m_y];
+            if (spr != NULL) {
+                if (spr.iColor == pChoose.iColor) {
+                    count ++;
+                    pUDList.push(spr);
+                }
+                else{
+                    break;
+                }
+            }
+            else{
+                break;
+            }
+        }
+
+        if (count >= 4) {
+            pRList = pRList.concat(pUDList);
+        }
+
+
+        /////////////////////////////
+        pO = pChoose.pos;
+        count = 0;
+        index = 0;
+        var pLRList = [];
+        //left right
+        for (; ; index++) {
+            pO.m_x--;
+            if (pO.m_x < 0) {
+                break;
+            }
+
+            var spr = this.m_MapSpr[pO.m_x][pO.m_y];
+            if (spr != null) {
+                if (spr.iColor == pChoose.iColor) {
+                    count ++;
+                    pLRList.push(spr);
+                }
+                else{
+                    break;
+                }
+            }
+            else{
+                break;
+            }
+        }
+
+        pO = pChoose.pos;
+        index = 0;
+        //up down
+        for (; ; index++) {
+            pO.m_x++;
+            if (pO.m_x > 8) {
+                break;
+            }
+
+            var spr = this.m_MapSpr[pO.m_x][pO.m_y];
+            if (spr != null) {
+                if (spr.iColor == pChoose.iColor) {
+                    count ++;
+                    pLRList.push(spr);
+                }
+                else{
+                    break;
+                }
+            }
+            else{
+                break;
+            }
+        }
+
+        if (count >= 4) {
+            pRList = pRList.concat(pLRList);
+        }
+
+
+        // \//
+        pO = pChoose.pos;
+        count = 0;
+        index = 0;
+        var pXList = [];
+        //left right
+        for (; ; index++) {
+            pO.m_x--;
+            pO.m_y--;
+            if (pO.m_x < 0 || pO.m_y < 0) {
+                break;
+            }
+
+            var spr = this.m_MapSpr[pO.m_x][pO.m_y];
+            if (spr != null) {
+                if (spr.iColor == pChoose.iColor) {
+                    count ++;
+                    pXList.push(spr);
+                }
+                else{
+                    break;
+                }
+            }
+            else{
+                break;
+            }
+        }
+
+        pO = pChoose.pos;
+        index = 0;
+        //up down
+        for (; ; index++) {
+            pO.m_x++;
+            pO.m_y++;
+            if (pO.m_x > 8 || pO.m_y > 8) {
+                break;
+            }
+
+            var spr = this.m_MapSpr[pO.m_x][pO.m_y];
+            if (spr != null) {
+                if (spr.iColor == pChoose.iColor) {
+                    count ++;
+                    pXList.push(spr);
+                }
+                else{
+                    break;
+                }
+            }
+            else{
+                break;
+            }
+        }
+
+        if (count >= 4) {
+            pRList = pRList.concat(pXList);
+        }
+
+        ///////////////////
+        pO = pChoose.pos;
+        count = 0;
+        index = 0;
+        var pXXList = [];
+        for (; ; index++) {
+            pO.m_x--;
+            pO.m_y++;
+            if (pO.m_x < 0 || pO.m_y > 8) {
+                break;
+            }
+
+            var spr = this.m_MapSpr[pO.m_x][pO.m_y];
+            if (spr != null) {
+                if (spr.iColor == pChoose.iColor) {
+                    count ++;
+                    pXXList.push(spr);
+                }
+                else{
+                    break;
+                }
+            }
+            else{
+                break;
+            }
+        }
+
+        pO = pChoose.pos;
+        index = 0;
+        for (; ; index++) {
+            pO.m_x++;
+            pO.m_y--;
+            if (pO.m_x > 8 || pO.m_y < 0) {
+                break;
+            }
+
+            var spr = this.m_MapSpr[pO.m_x][pO.m_y];
+            if (spr != NULL) {
+                if (spr.iColor == pChoose.iColor) {
+                    count ++;
+                    pXXList.push(spr);
+                }
+                else{
+                    break;
+                }
+            }
+            else{
+                break;
+            }
+        }
+
+        if (count >= 4) {
+            pRList = pRList.concat(pXXList);
+        }
+
+
+        for (var i = 0; i < pRList.length; i++) {
+            var spr = pRList[i];
+
+            this.m_Map.m_map[spr.pos.m_x * this.m_Map.m_width + spr.pos.m_y] = 0;
+            this.m_MapSpr[spr.pos.m_x][spr.pos.m_y] = 0;
+
+            this.removeChild(spr, true);
+
+            this.m_SpiritPool.splice(i,1);
+        }
+
+        if (pRList.size() > 0) {
+            var spr = pChoose;
+
+            this.m_Map.m_map[spr.pos.m_x * this.m_Map.m_width + spr.pos.m_y] = 0;
+            this.m_MapSpr[spr.pos.m_x][spr.pos.m_y] = 0;
+            this.removeChild(spr, true);
+
+            for (var i = 0 ; i < this.m_SpiritPool.length ; i++) {
+                if (spr.pos.equal(this.m_SpiritPool[i].pos)) {
+                    this.m_SpiritPool.splice(i,1);
+                    break;
+                }
+            }
+
+            return true;
+        }
+        return false;
     }
 });
 
@@ -234,3 +494,95 @@ TSGameLayer.scene = function () {
     scene.addChild(layer);
     return scene;
 };
+
+TSGameLayer.draw = function() {
+    if (this.m_iStat != 2) {
+        if (this.m_Choose != null) {
+        }
+        return;
+    }
+
+    if (this.m_pPath.length <= 0) {
+        return;
+    }
+
+    if (this.m_pPath.length <= this.m_iIndexPath) {
+        var iter = this.m_pPath[this.m_pPath.length-1];
+        var l = iter.m_x;
+        var h = iter.m_y;
+        this.m_Map.m_map[l * this.m_Map.m_width + h] = 1;
+        this.m_MapSpr[l][h] = this.m_Choose;
+        this.m_iStat = 0;
+
+        if (this.removeBall(this.m_Choose)) {
+            //add score
+            this.m_Choose = null;
+        }
+        else {
+            //add 3 ball
+            if (!this.random3Ball()) {
+
+            }
+
+            if (this.m_SpiritPool.size() >= 81) {
+                this.m_Map.m_map = [];
+                this.m_MapSpr = [];
+
+                for (var i = 0; i < this.m_SpiritPool.length; i++) {
+                    this.removeChild(this.m_SpiritPool[i], true);
+                }
+                this.m_SpiritPool = [];
+                this.m_Choose = null;
+
+                this.random3Ball();
+            }
+        }
+
+        for (var i = 0; i < this.m_pPathSpriteList.length; i++) {
+            this.removeChild(this.m_pPathSpriteList[i], true);
+        }
+        this.m_pPathSpriteList = [];
+
+        for (var i = 0; i < this.m_Map.m_width * this.m_Map.m_height; i++) {
+            var l = i / this.m_Map.m_width;
+            var h = i % this.m_Map.m_height;
+
+            if (this.m_Map.m_map[i] == 0) {
+                continue;
+            }
+            var pT = cc.sprite.create("res/chess1.png");
+            this.m_pPathSpriteList.push(pT);
+            var pP = this.m_pMeshPos[l][h];
+            pT.setPosition(pP);
+            this.addChild(pT, 2, 1);
+        }
+        return;
+    }
+
+    var pPos = this.m_pPath[this.m_iIndexPath];
+
+    var pEnd = this.m_pMeshPos[pPos.m_x][pPos.m_y];
+    var pT = this.m_Choose.getPosition();
+    var pMove = pT;
+
+    if (Math.abs(pEnd.x - pT.x) < 8 && Math.abs(pEnd.y - pT.y) < 8 ) {
+        this.m_iIndexPath ++;
+        this.m_Choose.pos = pPos;
+        pMove = pEnd;
+    }
+    else {
+        if (pEnd.x < pT.x) {
+            pMove.x -= 8;
+        }
+        else if (pEnd.x > pT.x) {
+            pMove.x += 8;
+        }
+        if (pEnd.y < pT.y) {
+            pMove.y -= 8;
+        }
+        else if (pEnd.y > pT.y) {
+            pMove.y += 8;
+        }
+    }
+    this.m_Choose.setPosition(pMove);
+}
