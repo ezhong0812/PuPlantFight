@@ -85,13 +85,10 @@ var TSGameLayer = cc.Layer.extend({
             for (var i = 0; i < 9; i++) {
                 for (var j = 0; j < 9; j++) {
                     this.m_pMeshPos[i][j] = cc.p(this.m_pOO.m_x + i * 33 + 32/2, this.m_pOO.m_y + j * 33 + 32/2);
-                    var spp = cc.Sprite.create(s_chess0);
-                    spp.setPosition(this.m_pMeshPos[i][j]);
-                    this.addChild(spp,0);
                 }
             }
 
-            //this.random3Ball();
+            this.random3Ball();
 
             ///Sys
             cc.MenuItemFont.setFontName("Arial");
@@ -240,7 +237,7 @@ var TSGameLayer = cc.Layer.extend({
             }
         }
 
-        pO = pChoose.pos;
+        pO = pChoose.pos.get();
         index = 0;
         //up down
         for (; ; index++) {
@@ -270,7 +267,7 @@ var TSGameLayer = cc.Layer.extend({
 
 
         /////////////////////////////
-        pO = pChoose.pos;
+        pO = pChoose.pos.get();
         count = 0;
         index = 0;
         var pLRList = [];
@@ -296,7 +293,7 @@ var TSGameLayer = cc.Layer.extend({
             }
         }
 
-        pO = pChoose.pos;
+        pO = pChoose.pos.get();
         index = 0;
         //up down
         for (; ; index++) {
@@ -326,7 +323,7 @@ var TSGameLayer = cc.Layer.extend({
 
 
         // \//
-        pO = pChoose.pos;
+        pO = pChoose.pos.get();
         count = 0;
         index = 0;
         var pXList = [];
@@ -353,7 +350,7 @@ var TSGameLayer = cc.Layer.extend({
             }
         }
 
-        pO = pChoose.pos;
+        pO = pChoose.pos.get();
         index = 0;
         //up down
         for (; ; index++) {
@@ -383,7 +380,7 @@ var TSGameLayer = cc.Layer.extend({
         }
 
         ///////////////////
-        pO = pChoose.pos;
+        pO = pChoose.pos.get();
         count = 0;
         index = 0;
         var pXXList = [];
@@ -409,7 +406,7 @@ var TSGameLayer = cc.Layer.extend({
             }
         }
 
-        pO = pChoose.pos;
+        pO = pChoose.pos.get();
         index = 0;
         for (; ; index++) {
             pO.m_x++;
@@ -517,16 +514,17 @@ var TSGameLayer = cc.Layer.extend({
             this.m_pPathSpriteList = [];
 
             for (var i = 0; i < this.m_Map.m_width * this.m_Map.m_height; i++) {
-                var l = i / this.m_Map.m_width;
-                var h = i % this.m_Map.m_height;
+                var l = parseInt(i / this.m_Map.m_width);
+                var h = parseInt(i % this.m_Map.m_height);
 
                 if (this.m_Map.m_map[i] == 0) {
                     continue;
                 }
-                var pT = cc.sprite.create("res/chess1.png");
+                var pT = cc.Sprite.create("res/chess1.png");
                 this.m_pPathSpriteList.push(pT);
                 var pP = this.m_pMeshPos[l][h];
                 pT.setPosition(pP);
+                pT.setScale(0.5);
                 this.addChild(pT, 2, 1);
             }
             return;

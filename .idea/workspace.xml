@@ -4,18 +4,17 @@
     <list default="true" id="27580a34-59fa-4670-8fb4-569d4074267c" name="Default" comment="">
       <change type="DELETED" beforePath="E:\GitHubProject\PuPlantFight\未命名文件夹\boardtest.png" afterPath="" />
       <change type="DELETED" beforePath="E:\GitHubProject\PuPlantFight\未命名文件夹\xx.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/engine/TSAStar.js" afterPath="$PROJECT_DIR$/PuPlantGame/engine/TSAStar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js" afterPath="$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PuPlantGame/src/TSSprite.js" afterPath="$PROJECT_DIR$/PuPlantGame/src/TSSprite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PuPlantFight.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363827804656" ignored="false" />
+    <file path="/Dummy.txt" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363838217046" ignored="false" />
     <file path="/mainMenu.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658666140" ignored="false" />
     <file path="E:/WebProject/Cocos/samples/games/MoonWarriors/src/SysMenu.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363658261875" ignored="false" />
     <file path="/TSMainMenu.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363663751640" ignored="false" />
     <file path="/TSSettingLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363662426906" ignored="false" />
-    <file path="/TSGameLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363833872968" ignored="false" />
+    <file path="/TSGameLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363838318265" ignored="false" />
     <file path="/TSAboutLayer.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363663681328" ignored="false" />
     <file path="/cocos2d.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363782429469" ignored="false" />
     <file path="/resource.js" changelist="27580a34-59fa-4670-8fb4-569d4074267c" time="1363786366278" ignored="false" />
@@ -94,7 +93,7 @@
       <file leaf-file-name="TSGameLayer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="41" selection-start="2641" selection-end="2641" vertical-scroll-proportion="0.6760204">
+            <state line="164" column="33" selection-start="4768" selection-end="4768" vertical-scroll-proportion="0.3535503">
               <folding />
             </state>
           </provider>
@@ -219,7 +218,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -230,72 +229,18 @@
       <autoscrollFromSource ProjectPane="true" />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantFight" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantFight" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantFight" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantFight" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantFight" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantFight" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantFight" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PuPlantGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TSCocos2DX" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TSCocos2DX" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.Index.html">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -421,14 +366,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1608" height="878" extended-state="6" />
+    <frame x="-4" y="-4" width="1608" height="878" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35945272" sideWeight="0.49968293" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920736" sideWeight="0.6110345" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920736" sideWeight="0.61210454" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.19513991" sideWeight="0.96829593" order="2" side_tool="true" content_ui="combo" x="1169" y="49" width="265" height="757" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38896552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38789546" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22320862" sideWeight="0.6110345" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21931034" sideWeight="0.49587825" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -505,18 +450,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js</url>
-          <line>167</line>
-          <option name="timeStamp" value="407" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js</url>
-          <line>154</line>
-          <option name="timeStamp" value="414" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="javascript-exception">
           <properties />
@@ -544,9 +477,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/base_nodes/CCNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1533" column="4" selection-start="47716" selection-end="47716" vertical-scroll-proportion="0.02827381">
-          <folding />
-        </state>
+        <state line="1533" column="4" selection-start="47716" selection-end="47716" vertical-scroll-proportion="0.02827381" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/menu_nodes/CCMenu.js">
@@ -624,7 +555,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PuPlantGame/src/TSGameLayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="41" selection-start="2641" selection-end="2641" vertical-scroll-proportion="0.6760204">
+        <state line="164" column="33" selection-start="4768" selection-end="4768" vertical-scroll-proportion="0.3535503">
           <folding />
         </state>
       </provider>
