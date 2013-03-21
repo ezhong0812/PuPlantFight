@@ -9,15 +9,15 @@ var TSGameLayer = cc.Layer.extend({
     //GameAS
     m_pMeshPos: [[0],[0],[0],[0],[0],[0],[0],[0],[0]],
     m_pOO: new TSPoint(0,0),
-    m_Map: null,
-    m_Star: null,
+    m_Map: new TSMap(),
+    m_Star: new TSAStar(),
 
     //Game
     m_Choose: null,
-    m_SpiritPool: null,
-    m_pPathSpriteList: null,
-    m_MapSpr: null,
-    m_pPath: null,
+    m_SpiritPool: [],
+    m_pPathSpriteList: [],
+    m_MapSpr: [[null],[null],[null],[null],[null],[null],[null],[null],[null]],
+    m_pPath: [],
     m_iIndexPath: 0,
     m_iStat: 0,
 
@@ -29,13 +29,13 @@ var TSGameLayer = cc.Layer.extend({
         var EmptyMap = [];
         for (var i = 0; i < this.m_Map.m_width * this.m_Map.m_height; i++) {
             if (this.m_Map.m_map[i] == 0) {
-                var l = i / this.m_Map.m_width;
-                var h = i % this.m_Map.m_height;
+                var l = parseInt(i / this.m_Map.m_width);
+                var h = parseInt(i % this.m_Map.m_height);
                 EmptyMap.push([l, h]);
             }
         }
 
-        if (EmptyMap.size() <= 0) {
+        if (EmptyMap.length <= 0) {
             return false;
         }
 
@@ -85,8 +85,13 @@ var TSGameLayer = cc.Layer.extend({
             for (var i = 0; i < 9; i++) {
                 for (var j = 0; j < 9; j++) {
                     this.m_pMeshPos[i][j] = cc.p(this.m_pOO.m_x + i * 33 + 32/2, this.m_pOO.m_y + j * 33 + 32/2);
+                    var spp = cc.Sprite.create(s_chess0);
+                    spp.setPosition(this.m_pMeshPos[i][j]);
+                    this.addChild(spp,0);
                 }
             }
+
+            //this.random3Ball();
 
             ///Sys
             cc.MenuItemFont.setFontName("Arial");
@@ -104,11 +109,6 @@ var TSGameLayer = cc.Layer.extend({
             cp_back.y -= 210.0;
             back.setPosition(cp_back);
 
-            // add "Helloworld" splash screen"
-            this.sprite = cc.Sprite.create(s_chess0);
-            this.sprite.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
-            this.addChild(this.sprite, 0);
-
             if( 'keyboard' in sys.capabilities )
                 this.setKeyboardEnabled(true);
 
@@ -118,17 +118,6 @@ var TSGameLayer = cc.Layer.extend({
             if( 'touches' in sys.capabilities )
                 this.setTouchEnabled(true);
 
-            var spr = this.sprite;
-            this.ws = WebSocketEngine (
-                function(jobj) {
-                    var x = Number(jobj.xx);
-                    var y = Number(jobj.yy);
-                    spr.setPosition(cc.p(x,y));
-                },
-                function(jobj) {
-
-                }
-            );
             bRet = true;
         }
         return bRet;
@@ -261,7 +250,7 @@ var TSGameLayer = cc.Layer.extend({
             }
 
             var spr = this.m_MapSpr[pO.m_x][pO.m_y];
-            if (spr != NULL) {
+            if (spr != null) {
                 if (spr.iColor == pChoose.iColor) {
                     count ++;
                     pUDList.push(spr);
@@ -430,7 +419,7 @@ var TSGameLayer = cc.Layer.extend({
             }
 
             var spr = this.m_MapSpr[pO.m_x][pO.m_y];
-            if (spr != NULL) {
+            if (spr != null) {
                 if (spr.iColor == pChoose.iColor) {
                     count ++;
                     pXXList.push(spr);
@@ -460,7 +449,7 @@ var TSGameLayer = cc.Layer.extend({
             this.m_SpiritPool.splice(i,1);
         }
 
-        if (pRList.size() > 0) {
+        if (pRList.length > 0) {
             var spr = pChoose;
 
             this.m_Map.m_map[spr.pos.m_x * this.m_Map.m_width + spr.pos.m_y] = 0;
@@ -477,6 +466,98 @@ var TSGameLayer = cc.Layer.extend({
             return true;
         }
         return false;
+    },
+
+    draw : function() {
+        if (this.m_iStat != 2) {
+            if (this.m_Choose != null) {
+            }
+            return;
+        }
+
+        if (this.m_pPath.length <= 0) {
+            return;
+        }
+
+        if (this.m_pPath.length <= this.m_iIndexPath) {
+            var iter = this.m_pPath[this.m_pPath.length-1];
+            var l = iter.m_x;
+            var h = iter.m_y;
+            this.m_Map.m_map[l * this.m_Map.m_width + h] = 1;
+            this.m_MapSpr[l][h] = this.m_Choose;
+            this.m_iStat = 0;
+
+            if (this.removeBall(this.m_Choose)) {
+                //add score
+                this.m_Choose = null;
+            }
+            else {
+                //add 3 ball
+                if (!this.random3Ball()) {
+
+                }
+
+                if (this.m_SpiritPool.length >= 81) {
+                    this.m_Map.m_map = [];
+                    this.m_MapSpr = [];
+
+                    for (var i = 0; i < this.m_SpiritPool.length; i++) {
+                        this.removeChild(this.m_SpiritPool[i], true);
+                    }
+                    this.m_SpiritPool = [];
+                    this.m_Choose = null;
+
+                    this.random3Ball();
+                }
+            }
+
+            for (var i = 0; i < this.m_pPathSpriteList.length; i++) {
+                this.removeChild(this.m_pPathSpriteList[i], true);
+            }
+            this.m_pPathSpriteList = [];
+
+            for (var i = 0; i < this.m_Map.m_width * this.m_Map.m_height; i++) {
+                var l = i / this.m_Map.m_width;
+                var h = i % this.m_Map.m_height;
+
+                if (this.m_Map.m_map[i] == 0) {
+                    continue;
+                }
+                var pT = cc.sprite.create("res/chess1.png");
+                this.m_pPathSpriteList.push(pT);
+                var pP = this.m_pMeshPos[l][h];
+                pT.setPosition(pP);
+                this.addChild(pT, 2, 1);
+            }
+            return;
+        }
+
+        var pPos = this.m_pPath[this.m_iIndexPath];
+
+        var pEnd = this.m_pMeshPos[pPos.m_x][pPos.m_y];
+        var pT = this.m_Choose.getPosition();
+        var pMove = pT;
+
+        if (Math.abs(pEnd.x - pT.x) < 8 && Math.abs(pEnd.y - pT.y) < 8 ) {
+            this.m_iIndexPath ++;
+            this.m_Choose.pos = pPos;
+            pMove = pEnd;
+        }
+        else {
+            if (pEnd.x < pT.x) {
+                pMove.x -= 8;
+            }
+            else if (pEnd.x > pT.x) {
+                pMove.x += 8;
+            }
+            if (pEnd.y < pT.y) {
+                pMove.y -= 8;
+            }
+            else if (pEnd.y > pT.y) {
+                pMove.y += 8;
+            }
+        }
+        this.m_Choose.setPosition(pMove);
     }
 });
 
@@ -495,94 +576,4 @@ TSGameLayer.scene = function () {
     return scene;
 };
 
-TSGameLayer.draw = function() {
-    if (this.m_iStat != 2) {
-        if (this.m_Choose != null) {
-        }
-        return;
-    }
 
-    if (this.m_pPath.length <= 0) {
-        return;
-    }
-
-    if (this.m_pPath.length <= this.m_iIndexPath) {
-        var iter = this.m_pPath[this.m_pPath.length-1];
-        var l = iter.m_x;
-        var h = iter.m_y;
-        this.m_Map.m_map[l * this.m_Map.m_width + h] = 1;
-        this.m_MapSpr[l][h] = this.m_Choose;
-        this.m_iStat = 0;
-
-        if (this.removeBall(this.m_Choose)) {
-            //add score
-            this.m_Choose = null;
-        }
-        else {
-            //add 3 ball
-            if (!this.random3Ball()) {
-
-            }
-
-            if (this.m_SpiritPool.size() >= 81) {
-                this.m_Map.m_map = [];
-                this.m_MapSpr = [];
-
-                for (var i = 0; i < this.m_SpiritPool.length; i++) {
-                    this.removeChild(this.m_SpiritPool[i], true);
-                }
-                this.m_SpiritPool = [];
-                this.m_Choose = null;
-
-                this.random3Ball();
-            }
-        }
-
-        for (var i = 0; i < this.m_pPathSpriteList.length; i++) {
-            this.removeChild(this.m_pPathSpriteList[i], true);
-        }
-        this.m_pPathSpriteList = [];
-
-        for (var i = 0; i < this.m_Map.m_width * this.m_Map.m_height; i++) {
-            var l = i / this.m_Map.m_width;
-            var h = i % this.m_Map.m_height;
-
-            if (this.m_Map.m_map[i] == 0) {
-                continue;
-            }
-            var pT = cc.sprite.create("res/chess1.png");
-            this.m_pPathSpriteList.push(pT);
-            var pP = this.m_pMeshPos[l][h];
-            pT.setPosition(pP);
-            this.addChild(pT, 2, 1);
-        }
-        return;
-    }
-
-    var pPos = this.m_pPath[this.m_iIndexPath];
-
-    var pEnd = this.m_pMeshPos[pPos.m_x][pPos.m_y];
-    var pT = this.m_Choose.getPosition();
-    var pMove = pT;
-
-    if (Math.abs(pEnd.x - pT.x) < 8 && Math.abs(pEnd.y - pT.y) < 8 ) {
-        this.m_iIndexPath ++;
-        this.m_Choose.pos = pPos;
-        pMove = pEnd;
-    }
-    else {
-        if (pEnd.x < pT.x) {
-            pMove.x -= 8;
-        }
-        else if (pEnd.x > pT.x) {
-            pMove.x += 8;
-        }
-        if (pEnd.y < pT.y) {
-            pMove.y -= 8;
-        }
-        else if (pEnd.y > pT.y) {
-            pMove.y += 8;
-        }
-    }
-    this.m_Choose.setPosition(pMove);
-}
