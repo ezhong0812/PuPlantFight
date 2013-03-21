@@ -7,19 +7,19 @@ var TSGameLayer = cc.Layer.extend({
     sprite: null,
 
     //GameAS
-    m_pMeshPos: [[0],[0],[0],[0],[0],[0],[0],[0],[0]],
-    m_pOO: new TSPoint(0,0),
-    m_Map: new TSMap(),
-    m_Star: new TSAStar(),
+    m_pMeshPos: null,
+    m_pOO: null,
+    m_Map: null,
+    m_Star: null,
 
     //Game
     m_Choose: null,
-    m_SpiritPool: [],
-    m_pPathSpriteList: [],
-    m_MapSpr: [[null],[null],[null],[null],[null],[null],[null],[null],[null]],
-    m_pPath: [],
-    m_iIndexPath: 0,
-    m_iStat: 0,
+    m_SpiritPool: null,
+    m_pPathSpriteList: null,
+    m_MapSpr: null,
+    m_pPath: null,
+    m_iIndexPath: null,
+    m_iStat: null,
 
     rand: function(num) {
         return parseInt(Math.random()*num);
@@ -68,6 +68,24 @@ var TSGameLayer = cc.Layer.extend({
 
 
     init:function () {
+        this.ws = null; //WebSocket引擎
+        this.sprite = null;
+
+        //GameAS
+        this.m_pMeshPos = [[0],[0],[0],[0],[0],[0],[0],[0],[0]];
+        this.m_pOO = new TSPoint(0,0);
+        this.m_Map = new TSMap();
+        this.m_Star = new TSAStar();
+
+        //Game
+        this.m_Choose = null;
+        this.m_SpiritPool = [];
+        this.m_pPathSpriteList = [];
+        this.m_MapSpr = [[null],[null],[null],[null],[null],[null],[null],[null],[null]];
+        this.m_pPath = [];
+        this.m_iIndexPath = 0;
+        this.m_iStat = 0;
+
         var bRet = false;
         if (this._super()) {
             var sp = cc.Sprite.create(s_background);
